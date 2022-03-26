@@ -1,8 +1,6 @@
 # _Random Book Purchase App_ : FRONTEND
-
 ### GUI built for Matterway's tech interview challenge
 
----
 
 A simple application created for very undecided readers. With the help of this app you can:
 
@@ -11,9 +9,6 @@ A simple application created for very undecided readers. With the help of this a
 -   Add the item to the cart and display the checkout page
 
 ## Installation
-
----
-
 Make sure you have the [Angular CLI](https://github.com/angular/angular-cli#installation) installed globally and `Node v16.10.0`.
 In order to resolve all dependencies run `yarn` or `npm install`.
 
