@@ -1,0 +1,44 @@
+{
+    "printWidth": 140,
+    "singleQuote": true,
+    "useTabs": false,
+    "tabWidth": 4,
+    "semi": true,
+    "bracketSpacing": true,
+    "importOrder": [
+        "^@angular/(.*)$",
+        "^rxjs(.*)$",
+        "^rxjs/(.*)$",
+        "^ngx-[a-zA-Z]*$",
+        "^ag-grid-angular$",
+        "^ag-grid-community$",
+        "^angular-mydatepicker",
+        "^ng-(.*)$",
+        "^@ngneat(.*)$",
+        "^@app/core/services/(.*)$",
+        "^@app/(.*)$",
+        "^@env/(.*)$",
+        "^[./]",
+        "^[a-zA-Z-\/]*$"
+    ],
+    "importOrderSeparation": true,
+    "importOrderParserPlugins": [
+        "typescript",
+        "classProperties",
+        "decorators-legacy"
+    ],
+    "overrides": [
+        {
+            "files": "*.html",
+            "options": {
+                "parser": "html"
+            }
+        },
+        {
+            "files": "*.component.html",
+            "options": {
+                "parser": "angular"
+            }
+        }
+    ]
+}

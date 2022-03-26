@@ -1,0 +1,90 @@
+@import './../../../assets/scss/colors';
+
+/***
+
+BOOK SELECTION PAGE
+
+***/
+
+.rbp-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: $brand-01;
+
+    &__content {
+        width: 100%;
+        min-height: 100vh;
+        padding: 50px 30px;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__genresWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 50px;
+    }
+    &__head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto 50px auto;
+    }
+    &__title {
+        line-height: 47px;
+        font-size: 50px;
+        font-weight: bold;
+        color: $ui-01;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    &__instructions {
+        text-align: center;
+    }
+}
+
+/***
+
+GENRE CARD
+
+***/
+
+.rbp-genreCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: auto;
+    border-radius: 2px;
+    background-color: $brand-02;
+    box-shadow: 0 10px 20px rgba($ui-01, 0.19), 0 6px 6px rgba($ui-01, 0.23);
+    transition: opacity 0.2s linear;
+    padding: 16px 30px;
+    cursor: pointer;
+
+    &__title {
+        line-height: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: $brand-01;
+        letter-spacing: 0.2em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &.-active {
+        background-color: $brand-03;
+    }
+
+    &.-disabled {
+        pointer-events: none;
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+}

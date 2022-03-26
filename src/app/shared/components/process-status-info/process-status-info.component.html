@@ -1,0 +1,7 @@
+<div class="rbp-processStatusInfo" [ngClass]="{ '-error': statusConfig.error, '-loading': statusConfig.loading }">
+    <p class="rbp-processStatusInfo__message">{{ statusConfig.message }}</p>
+    <div class="loader" *ngIf="statusConfig.loading">
+        <div></div>
+        <div></div>
+    </div>
+</div>

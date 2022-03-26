@@ -1,0 +1,18 @@
+<div class="rbp-page -bookSelection">
+    <div class="rbp-page__content">
+        <div class="rbp-page__head">
+            <h1 class="rbp-page__title">Random Book Purchase App</h1>
+        </div>
+        <rbp-process-status-info [statusConfig]="processStatusConfig"></rbp-process-status-info>
+        <div class="rbp-page__genresWrapper" *ngIf="genresData">
+            <div
+                class="rbp-genreCard"
+                (click)="onGenreSelected(genre)"
+                *ngFor="let genre of genresData"
+                [ngClass]="{ '-active': genre === activeGenre, '-disabled': purchaseInProgress }"
+            >
+                <p class="rbp-genreCard__title">{{ genre.label }}</p>
+            </div>
+        </div>
+    </div>
+</div>

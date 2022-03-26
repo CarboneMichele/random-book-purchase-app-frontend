@@ -1,0 +1,43 @@
+{
+    "folders": [
+        {
+            "path": "./"
+        }
+    ],
+    "settings": {
+        "typescript.tsdk": "node_modules/typescript/lib",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        },
+        "[typescript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[html]": {
+            "editor.formatOnSave": true,
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[yaml]": {
+            "editor.formatOnSave": false
+        },
+        "cSpell.words": [
+            "browserslist",
+            "editorconfig",
+            "ngneat",
+        ],
+    },
+    "extensions": {
+        "recommendations": [
+            "natewallace.angular2-inline",
+            "angular.ng-template",
+            "johnpapa.angular2",
+            "dbaeumer.vscode-eslint",
+            "esbenp.prettier-vscode",
+            "editorconfig.editorconfig",
+            "streetsidesoftware.code-spell-checker",
+            "karyfoundation.comment",
+            "aaron-bond.better-comments",
+            "vivaxy.vscode-conventional-commits"
+        ]
+    }
+}
