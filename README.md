@@ -1,6 +1,4 @@
 # _Random Book Purchase App_ : FRONTEND
-### GUI built for Matterway's tech interview challenge
-
 
 A simple application created for very undecided readers. With the help of this app you can:
 
